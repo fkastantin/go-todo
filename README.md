@@ -1,13 +1,13 @@
 # TODO App - golang
 
-This repo is created for learning purpose. The backend is developed using `GIN` framework using `golang`, `repository-service-controller` architecture and `dependency injection` principle are used, and `Docker` is used to host the API and mysql database.
+This repo is created for learning purpose. The backend is developed using `GIN` framework using `golang`, `repository-service-controller` architecture and `dependency injection` principles are used, and `Docker` is used to host the API and the mysql database.
 
 
 ## Model
-Model is the layer where the data stored in the database is described, we have one entity `task`. `task.go` contains the struct with the name `Task` and the corresponding attributes. `TableName` method returns the name of the table is the database.
+Model is the layer where the data stored in the database is described, we have one entity `task`. `task.go` contains the struct with the name `Task` and the corresponding attributes. `TableName` method returns the name of the table in the database.
 
 ## Repository
-Repository is the data access layer, it should provide all needed database operations (`CURD`). It uses `GORM` framework which is an ORM (object relational mapping) framework, it does the whole logic behind mapping between the database table and application objects.
+Repository is the data access layer, it should provide all needed database operations (`CURD`). It uses `GORM` framework which is an ORM (object relational mapping) framework, it does the whole logic behind the mapping between the database table and the application objects.
 
 We have one repository under `task_repositry.go` and it's powered with the CRUD operations for the `task` model.
 
